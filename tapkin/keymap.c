@@ -1,19 +1,19 @@
 #include QMK_KEYBOARD_H
 
-#define SFT_SPC = MT(MOD_LSFT, KC_SPC)
-#define CTL_ESC = MT(MOD_LCTL, KC_ESC)
-#define ALT_CAP = MT(MOD_LALT, KC_CAPS)
-#define GUI_DEL = MT(MOD_LGUI, KC_DEL)
+#define SFT_SPC MT(MOD_LSFT, KC_SPC)
+#define CTL_ESC MT(MOD_LCTL, KC_ESC)
+#define ALT_CAP MT(MOD_LALT, KC_CAPS)
+#define GUI_DEL MT(MOD_LGUI, KC_DEL)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[0] = LAYOUT_ortho_3x10(
-		KC_G   , KC_C   , KC_D   , KC_M   , KC_F   , KC_B   , KC_W   , KC_U   , KC_O   , KC_P   ,
-		KC_R   , KC_S   , KC_T   , KC_N   , KC_H   , KC_Y   , KC_I   , KC_E   , KC_A   , KC_L   ,
+		KC_G   , KC_C   , KC_D   , KC_L   , KC_M   , KC_B   , KC_W   , KC_U   , KC_O   , KC_P   ,
+		KC_R   , KC_S   , KC_T   , KC_N   , KC_H   , KC_Y   , KC_I   , KC_E   , KC_A   , KC_F   ,
 		KC_LEFT, KC_DOWN, ALT_CAP, CTL_ESC, SFT_SPC, MO(2)  , MO(1)  , GUI_DEL, KC_UP  , KC_RGHT
 	),
 
 	[1] = LAYOUT_ortho_3x10(
-		KC_GRV , KC_Q   , KC_K   , KC_J   , KC_EQL , KC_BSLS, KC_COMM, KC_DOT , KC_RBRC, KC_LBRC,
+		KC_GRV , KC_Q   , KC_K   , KC_J   , KC_EQL , KC_BSLS, KC_COMM, KC_DOT , KC_LBRC, KC_RBRC,
 		KC_X   , KC_Z   , KC_V   , KC_QUOT, KC_MINS, KC_SLSH, KC_ENT , KC_TAB , KC_BSPC, KC_SCLN,
 		KC_HOME, KC_PGDN, _______, _______, _______, TG(3)  , _______, _______, KC_PGUP, KC_END
 	),

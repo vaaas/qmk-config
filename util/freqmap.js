@@ -31,7 +31,7 @@ const left = [
 
 const right = [
 	b, w, u, o, p,
-	y, i, e, a, o,
+	y, i, e, a, f,
 ]
 
 const add = (a, b) => a + b
